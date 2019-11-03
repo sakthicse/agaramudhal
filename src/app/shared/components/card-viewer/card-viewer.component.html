@@ -1,0 +1,27 @@
+<div fxFlex fxLayout="column" fxLayoutGap="10px">
+  <div fxLayout="row wrap">
+    <!-- loop over the cardList and show the cards -->
+    <div
+      *ngFor="let card of cardList"
+      fxFlex="25"
+      fxFlex.md="33"
+      fxFlex.sm="50"
+      fxFlex.xs="100"
+      fxLayout="column"
+      style="padding: 5px;"
+    >
+      <!-- cards here -->
+      <mat-card>
+        <img mat-card-md-image [src]="card?.imgSrc" class="pb-1" />
+        <mat-card-title class="title"> 
+          {{ card?.title }}
+        </mat-card-title>
+        <mat-card-actions>
+          <button fxFlex mat-flat-button color="warn" [routerLink]="[card?.link]">
+            <mat-icon>arrow_forward</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

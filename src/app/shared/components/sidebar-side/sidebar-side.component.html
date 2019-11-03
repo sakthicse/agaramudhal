@@ -1,0 +1,26 @@
+<div class="sidebar-panel">
+    <div id="scroll-area" [perfectScrollbar] class="navigation-hold" fxLayout="column">
+        <div class="sidebar-hold">
+            
+            <!-- App Logo -->
+            <div class="branding">
+                <span class="app-logo" *ngIf="layoutConf.sidebarStyle === 'compact'" >AG</span>
+                <span class="app-logo-text">AGARAMUDHAL</span>
+                <span style="margin: auto" *ngIf="layoutConf.sidebarStyle !== 'compact'"></span>
+                <div 
+                class="sidebar-compact-switch"
+                [ngClass]="{active: layoutConf.sidebarCompactToggle}"
+                (click)="toggleCollapse()" 
+                *ngIf="layoutConf.sidebarStyle !== 'compact'"><span></span></div>
+            </div>
+        
+            <div class="app-user">
+                <div class="app-user-photo">
+                    <img src="assets/images/logo_1.png" alt="">
+                </div>
+            </div>
+            <!-- Navigation -->
+            <app-sidenav [items]="menuItems" [hasIconMenu]="hasIconTypeMenuItem" [iconMenuTitle]="iconTypeMenuTitle"></app-sidenav>
+        </div>
+    </div>
+</div>
