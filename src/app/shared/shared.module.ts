@@ -12,15 +12,13 @@ import { AppLoaderService } from './services/app-loader/app-loader.service';
 import { SharedComponentsModule } from './components/shared-components.module';
 import { SharedPipesModule } from './pipes/shared-pipes.module';
 import { SharedDirectivesModule } from './directives/shared-directives.module';
-import { SessionsModule } from 'app/views/sessions/sessions.module';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedComponentsModule,
     SharedPipesModule,
-    SharedDirectivesModule,
-    SessionsModule
+    SharedDirectivesModule
   ],
   providers: [
     ThemeService,
@@ -33,8 +31,7 @@ import { SessionsModule } from 'app/views/sessions/sessions.module';
   exports: [
     SharedComponentsModule,
     SharedPipesModule,
-    SharedDirectivesModule,
-    SessionsModule
+    SharedDirectivesModule
   ]
 })
 export class SharedModule { }

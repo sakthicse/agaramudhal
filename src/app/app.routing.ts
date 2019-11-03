@@ -4,7 +4,7 @@ import { AdminLayoutComponent } from './shared/components/layouts/admin-layout/a
 export const rootRouterConfig: Routes = [
   { 
     path: '',
-    redirectTo: 'resources',
+    redirectTo: 'resources/home',
     pathMatch: 'full'
   },
   {
@@ -16,6 +16,11 @@ export const rootRouterConfig: Routes = [
         loadChildren: () => import('./views/agaramudhal/agaramudhal.module').then(m => m.AgaramudhalModule),
       }
     ]
+  },
+  {
+    path: 'sessions',
+    loadChildren: () => import('./views/sessions/sessions.module').then(m => m.SessionsModule),
+    data: { title: 'Session'}
   },
   {
     path: '**',
