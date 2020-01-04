@@ -44,6 +44,7 @@ export class NavigationService {
       sub: [
         { name: 'Approvals & Registrations', state: 'approval-registration', icon: 'assets/images/approved.png' },
         { name: 'Founding', state: 'founding', icon: 'assets/images/founding.png' },
+        { name: 'Trustee Details', state: 'trustee-details' },
         { name: 'Tax Benefits', state: 'tax-benefits', icon: 'assets/images/tax1.png' },
         { name: 'Vision & Mission', state: 'vision-mission', icon: 'assets/images/vision-mission-1.png' }
       ]

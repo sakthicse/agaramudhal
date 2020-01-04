@@ -1,1 +1,57 @@
-<app-not-found></app-not-found>
+<mat-card>
+    <div fxLayout="row" fxLayoutGap="10px" fxLayout.xs="column">
+        <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="start start" fxLayoutGap="15px" fxFlex>
+            <div *ngFor="let member of members1">
+                <img [src]="member.url" class="responsive" alt="Photo of {{member.title}}" [title]="member.title">
+            </div>
+        </div>
+        <section class="home-section section-intro text-center" fxFlex="65">
+            <div class="container">
+                <span class="egret">Siruthamur</span>
+                <div class="star-banner">
+                </div>
+                <h3 matSubheader>
+                    <code>Our First Project for Panchayat Union Primary School, Siruthamur, Kancheepuram Dt.</code>
+                </h3>
+                <div fxLayout="column wrap">
+                    <h4> <strong>Challenges / Needs</strong> </h4>
+                    <ol>
+                        <li>
+                            Classes were taking place without enough lighting and ventilations in three class rooms.
+                        </li>
+                        <li>
+                            Students were facing difficulties due to shortage of drinking water.
+                        </li>
+                        <li>
+                            Students were also facing another challenge due to absence of water facility in the toilets.
+                        </li>
+                    </ol> 
+                </div>
+                <div fxLayout="column wrap">
+                    <h4> <strong>Implemented Solutions</strong> </h4>
+                    <ol>
+                        <li>
+                            Four LED lights and Ten fans were provided to ensure sufficient lighting and air flow.
+                        </li>
+                        <li>
+                            A tapping was done to run a new pipeline from the main line that was running across the village to fill the water in the panchayat overhead tank. An overhead tank was provided for the school to store the water. Distribution line from the overhead tank with an UV filter was provide so that the students could get the drinking water.
+                        </li>
+                        <li>
+                            From the same overhead tank, pipelines were laid to water the toilets. Also new steel doors were provided for the toilets.
+                        </li>
+                    </ol> 
+                </div>
+                <div fxLayout="column wrap">
+                    <h4> <strong>Results</strong> </h4>
+                    A happy and relieved teachers and students resulting in increased focus on teaching and learning.
+                </div>
+            </div>
+        </section>
+        <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="start start" fxLayoutGap="15px" fxFlex>
+            <div *ngFor="let member of members2">
+                <img [src]="member.url" class="responsive" alt="Photo of {{member.title}}" [title]="member.title">
+            </div>
+        </div>
+    </div>
+</mat-card>
+

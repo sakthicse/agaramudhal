@@ -9,6 +9,7 @@ import { ProjectTwoComponent } from './project-two/project-two.component';
 import { DonateComponent } from './donate/donate.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TrusteeDetailsComponent } from './trustee-details/trustee-details.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,11 @@ const routes: Routes = [
         path: 'founding',
         component: FoundingComponent,
         data: { title: 'Founding' }
+      },
+      {
+        path: 'trustee-details',
+        component: TrusteeDetailsComponent,
+        data: { title: 'Trustee Details' }
       },
       {
         path: 'tax-benefits',
@@ -95,6 +101,7 @@ export const AgaramudhalComponents = [
   ProjectOneComponent,
   ProjectTwoComponent,
   FoundingComponent,
+  TrusteeDetailsComponent,
   TaxBenefitsComponent,
   VisionAndMissionComponent,
   DonateComponent,

@@ -18,15 +18,20 @@
     </form>
   </div> -->
 
-  <span fxFlex></span>
+  <span fxFlex fxLayoutAlign="center center" fxShow="true" fxHide.lt-sm>
+    <a mat-raised-button [ngStyle]="{'font-size': '15px', 'font-family': 'monospace'}" type="button" routerLink="/"> 
+      Agara Mudhal Trust
+    </a>
+  </span>
 
-  <div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="center center">
+  <div fxLayout="row" fxLayoutGap="15px" class="header-logo-section" fxLayoutAlign="end center">
     
     <!-- <img src="assets/images/social-facebook.png" width="16" height="16" matTooltip="Facebook">
   
-    <img src="assets/images/social-twitter.png"  width="16" height="16" matTooltip="Twitter">
-
-    <img src="assets/images/social-linkedin.png"  width="16" height="16" matTooltip="Linked-In"> -->
+    <img src="assets/images/social-twitter.png"  width="16" height="16" matTooltip="Twitter"> -->
+    <a [routerLink]="['/']" fxLayoutAlign="end center">
+      <img src="assets/images/logo_1.png"  width="46" height="46" matTooltip="Home" class="header-logo">
+    </a>
         
   </div>
   <!-- Language Switcher -->

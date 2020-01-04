@@ -7,3 +7,24 @@
         }
     }
 }
+
+.header-logo {
+    background: whitesmoke;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 680px) {
+    .header-logo-section {
+        width: 100%;
+        a {
+            text-align: right;
+            .header-logo {
+                float: right;
+                padding: 0px;
+            }
+        }
+    }
+}

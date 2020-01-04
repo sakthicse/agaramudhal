@@ -1,3 +1,14 @@
 address {
     margin: 30px 0px;
 }
+.section-intro {
+    padding: 50px 0px 30px;
+}
+iframe {
+    overflow: hidden;
+}
+@media only screen and (min-width: 360px) and (max-width: 680px) {
+    iframe {
+        width: 100%;
+    }
+}
