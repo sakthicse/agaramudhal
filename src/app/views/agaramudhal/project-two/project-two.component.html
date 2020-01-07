@@ -1,1 +1,68 @@
-<app-not-found></app-not-found>
+<mat-card>
+    <div fxLayout="row" fxLayoutGap="10px" fxLayout.xs="column" fxLayout.sm="column">
+        <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="start start" fxLayoutGap="15px" fxFlex>
+            <div *ngFor="let member of members1">
+                <img [src]="member.url" class="responsive" alt="Photo of {{member.title}}" [title]="member.title">
+            </div>
+        </div>
+        <section class="home-section section-intro text-center" fxFlex="65">
+            <div class="container">
+                <span class="egret">Velampalayam</span>
+                <div class="star-banner">
+                </div>
+                <h3 matSubheader>
+                    <code>Our Second Project for Panchayat Union Primary School, Velampalayam, Namakkal Dt.</code>
+                </h3>
+                <div fxLayout="column wrap">
+                    <h4> <strong>Challenges / Needs</strong> </h4>
+                    <ol>
+                        <li>
+                            Floors in two class rooms were damaged making them uneven.
+                        </li>
+                        <li>
+                            Students were facing difficulties in getting quality drinking water.
+                        </li>
+                        <li>
+                            Students were also facing another challenge due to absence of running water facility in the toilets.
+                        </li>
+                        <li>
+                            Few class rooms were affected with leaking ceiling.
+                        </li>
+                        <li>
+                            Sufficient number of fans were missing in class rooms resulting in sweating of a section students.
+                        </li>
+                    </ol>
+                </div>
+                <div fxLayout="column wrap">
+                    <h4> <strong>Implemented Solutions</strong> </h4>
+                    <ol>
+                        <li>
+                            Vitrified tiling was provided in two class rooms making it neat and clean. The walls and black board were painted to make them new and fresh.
+                        </li>
+                        <li>
+                            A1000L PVC overhead tank was provided for the school to store the water by tapping from the Panchayat Overhead tank which had been erected within the premises of the school. Distribution line from the overhead tank with an UV filter was provided so that the students could get the drinking water.
+                        </li>
+                        <li>
+                            From the same overhead tank, pipelines were laid to water the toilets.
+                        </li>
+                        <li>
+                            As there were no steps to reach the terrace of the school building, none inspected or maintained or cleaned the terrace in the past. This lead to accummulation of wastes and water logging resulting in leaking ceiling. Terrance was cleaned and leaking places were sealed with cement.
+                        </li>
+                        <li>
+                            Four additional fans were provided to ensure sufficient air flow in the class rooms.
+                        </li>
+                    </ol>
+                </div>
+                <div fxLayout="column wrap">
+                    <h4> <strong>Results</strong> </h4>
+                    A happy and relieved teachers and students resulting in increased focus on teaching and learning.
+                </div>
+            </div>
+        </section>
+        <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="start start" fxLayoutGap="15px" fxFlex>
+            <div *ngFor="let member of members2">
+                <img [src]="member.url" class="responsive" alt="Photo of {{member.title}}" [title]="member.title">
+            </div>
+        </div>
+    </div>
+</mat-card>

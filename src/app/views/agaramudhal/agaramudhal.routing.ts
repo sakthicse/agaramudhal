@@ -10,6 +10,7 @@ import { DonateComponent } from './donate/donate.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TrusteeDetailsComponent } from './trustee-details/trustee-details.component';
+import { ProjectThreeComponent } from './project-three/project-three.component';
 
 const routes: Routes = [
   {
@@ -75,6 +76,11 @@ const routes: Routes = [
         component: ProjectTwoComponent,
         data: { title: 'Project-Two' }
       },
+      {
+        path: 'project-three',
+        component: ProjectThreeComponent,
+        data: { title: 'Project-Three' }
+      },
     ]
   },
   {
@@ -100,6 +106,7 @@ export const AgaramudhalComponents = [
   ApprovalsAndRegistrationComponent,
   ProjectOneComponent,
   ProjectTwoComponent,
+  ProjectThreeComponent,
   FoundingComponent,
   TrusteeDetailsComponent,
   TaxBenefitsComponent,

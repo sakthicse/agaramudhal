@@ -55,8 +55,9 @@ export class NavigationService {
       icon: 'group_work',
       state: 'resources/projects',
       sub: [
-        { name: 'Project-I', state: 'project-one' },
-        { name: 'Project-II', state: 'project-two' }
+        { name: 'Siruthamur', state: 'project-one' },
+        { name: 'Velampalayam', state: 'project-two' },
+        { name: 'Singililan Kombai', state: 'project-three'}
       ]
     },
     {

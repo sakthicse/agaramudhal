@@ -1,5 +1,5 @@
 <mat-card>
-    <div fxLayout="row" fxLayoutGap="10px" fxLayout.xs="column">
+    <div fxLayout="row" fxLayoutGap="10px" fxLayout.xs="column" fxLayout.sm="column">
         <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutAlign="start start" fxLayoutGap="15px" fxFlex>
             <div *ngFor="let member of members1">
                 <img [src]="member.url" class="responsive" alt="Photo of {{member.title}}" [title]="member.title">
